@@ -5,19 +5,11 @@
 	<meta charset="utf-8">
 	<title>UMJC</title>
 	<link rel="stylesheet" type="text/css" href="indexStyle.css">
+	<script src="indexLoadPosts.js"></script>
 </head>
 
 <body>
 	<div id="mainPage">
-		UMJC의 테스트 페이지
-		<hr>
-		Hello, world!<br>
-		<code>
-			fn main() { <br>
-			&nbsp;&nbsp;&nbsp;&nbsp;println!("Hello, world!"); <br>
-			&nbsp;&nbsp;&nbsp;&nbsp;() <br>
-			} <br>
-		</code>
 	</div>
 	<nav>
 		<ul>
@@ -30,18 +22,23 @@
 			<li>
 				카테고리<br>
 				<ul>
-					<li><a href="/Posts/Educations">학습</a></li>
-					<li><a href="/Posts/Mathematics">수학</a></li>
-					<li><a href="/Posts/MathematicsEducation">수학교육</a></li>
-					<li><a href="/Posts/Programming">프로그래밍</a></li>
-					<li><a href="/Posts/DailyLife">일상</a></li>
+					<li><a href="#" onclick="loadPosts('Posts/Educations')">학습</a></li>
+					<li><a href="#" onclick="loadPosts('Posts/Mathematics')">수학</a></li>
+					<li><a href="#" onclick="loadPosts('Posts/MathematicsEducation')">수학교육</a></li>
+					<li><a href="#" onclick="loadPosts('Posts/Programming')">프로그래밍</a></li>
+					<li><a href="#" onclick="loadPosts('Posts/DailyLife')">일상</a></li>
 				</ul>
 			</li>
 		</ul>
 	</nav>
 	<div id="profile">
-		
+		<h3>UMJC</h3>
+		중등 수학교사를 꿈꾸고 있는 평범한 학생...<br>
+		<a href="https://www.youtube.com/channel/UCqUuof2c-R3dTX6G6LBGB9A"><img alt="My Youtube channel" src="youtubeLogo.png" style="height:1em"> 유튜브 채널</a>
 	</div>
+	<script>
+		loadPosts('Posts');
+	</script>
 </body>
 
 </html>
