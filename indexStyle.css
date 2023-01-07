@@ -1,21 +1,21 @@
 nav {
-    width: 10%;
-    height: 75%;
+    width: 20%;
+    height: 80%;
     position:fixed;
     left:0%;
     bottom:0%;
 }
 
 div#profile {
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
     position:fixed;
     left:0%;
     top:0%;
 }
 
 div#mainPage {
-    width: 90%;
+    width: 20%;
     height: 100%;
     position: relative;
     left: 10%;
