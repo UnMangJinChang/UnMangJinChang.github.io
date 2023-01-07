@@ -1,0 +1,23 @@
+nav {
+    width: 30%;
+    height: 70%;
+    position:fixed;
+    left:0%;
+    bottom:70%;
+}
+
+div#profile {
+    width: 30%;
+    height: 30%;
+    position:fixed;
+    left:0%;
+    top:0%;
+}
+
+div#mainPage {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    left: 30%;
+    top: 0%;
+}
