@@ -4,6 +4,7 @@ nav {
     position:fixed;
     left:0%;
     bottom:0%;
+    background-color: rgb(247, 245, 235);
 }
 
 div#profile {
@@ -12,6 +13,7 @@ div#profile {
     position:fixed;
     left:0%;
     top:0%;
+    background-color: rgb(234, 199, 199);
 }
 
 div#mainPage {
@@ -20,4 +22,5 @@ div#mainPage {
     position: relative;
     left: 20%;
     top: 0%;
+    background-color: rgb(234, 224, 218);
 }
