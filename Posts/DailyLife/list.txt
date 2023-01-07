@@ -1,2 +1,3 @@
+TestPage3.html
+TestPage1.html
 TestPage2.html
-TestPage.html

@@ -2,6 +2,12 @@ body {
     background-color: rgb(234, 224, 218);
 }
 
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
 nav {
     width: calc(20% - 0.6em * 2);
     height: calc(80% - 0.6em * 2);
@@ -40,4 +46,9 @@ div#mainPage > section {
     padding: 1em;
     display: block;
     overflow: hidden;
+}
+
+div#mainPage > section > footer#timepoint {
+    font-size: 0.5em;
+    color:black;
 }
