@@ -10,22 +10,27 @@
 
 <body>
 	<div id="mainPage">
-		<div id="page"></div>
-		<div id="pageSelect"></div>
+		<div class="page"></div>
+		<div class="pageSelect"></div>
 	</div>
 	<nav>
 		<ul>
 			<li>
-				최근 포스트<br>
-				<ol>
-					<li>No Posts available.</li>
-				</ol>
-			</li>
-			<li>
 				카테고리<br>
 				<ul>
 					<li><a href="#" onclick="loadPosts('Posts/Educations')">학습</a></li>
-					<li><a href="#" onclick="loadPosts('Posts/Mathematics')">수학</a></li>
+					<li><a href="#" onclick="loadPosts('Posts/Mathematics')">수학</a>
+						<ul>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/Calculus')">미적분학</a></li>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/LinearAlgebra')">선형대수학</a></li>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/RealAnalysis')">실해석학</a></li>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/Topology')">위상수학</a></li>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/DifferentialGeometry')">미분기하학</a></li>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/AbstractAlgebra')">추상대수학</a></li>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/ComplexAnalysis')">복소해석학</a></li>
+							<li><a href="#" onclick="loadPosts('Posts/Mathematics/Discrete')">이산수학</a></li>
+						</ul>
+					</li>
 					<li><a href="#" onclick="loadPosts('Posts/MathematicsEducation')">수학교육</a></li>
 					<li><a href="#" onclick="loadPosts('Posts/Programming')">프로그래밍</a></li>
 					<li><a href="#" onclick="loadPosts('Posts/DailyLife')">일상</a></li>
@@ -36,6 +41,7 @@
 	<div id="profile">
 		<h3>UMJC</h3>
 		중등 수학교사를 꿈꾸고 있는 평범한 학생...<br>
+		<br>
 		<a href="https://www.youtube.com/channel/UCqUuof2c-R3dTX6G6LBGB9A"><img alt="My Youtube channel" src="youtubeLogo.png" style="height:1em"> 유튜브 채널</a>
 	</div>
 	<script>

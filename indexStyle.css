@@ -34,7 +34,7 @@ div#profile {
     overflow: hidden;
 }
 
-div#mainPage > section {
+div#mainPage > div.page > section {
     width: calc(80% - 1em * 2 - 0.7em);
     height: calc(100% - 1em * 2);
     position: relative;
@@ -48,7 +48,16 @@ div#mainPage > section {
     overflow: hidden;
 }
 
-div#mainPage > section > footer#timepoint {
+div#mainPage > div.pageSelect {
+    width: 80%;
+    display: block;
+    position: relative;
+    left: 20%;
+    text-align: center;
+    tab-size: 3;
+}
+
+div#mainPage > div.page > section > footer.timepoint {
     font-size: 0.5em;
     color:black;
 }
