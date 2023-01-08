@@ -1,3 +1,4 @@
+DailyLife/TestPage4.html
 DailyLife/TestPage3.html
 DailyLife/TestPage1.html
 DailyLife/TestPage2.html

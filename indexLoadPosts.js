@@ -56,10 +56,11 @@ function showPosts(pageIdx) {
                 }
             }
         }
-        postRequest.open('GET', currentFolder + '/' + posts[i]);
+        postRequest.open('GET', currentFolder + '/' + posts[i], false);
         postRequest.send();
     }
     setPageSelector(pageSelect);
+    MathJax.typeset();
 }
 
 function loadPosts(folder) {

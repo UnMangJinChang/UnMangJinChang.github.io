@@ -6,9 +6,11 @@
 	<title>UMJC의 자유로운 공간</title>
 	<link rel="stylesheet" type="text/css" href="indexStyle.css">
 	<script src="indexLoadPosts.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body onload="loadPosts('Posts')">
 	<div id="mainPage">
 		<div class="page"></div>
 		<div class="pageSelect"></div>
@@ -44,9 +46,6 @@
 		<br>
 		<a href="https://www.youtube.com/channel/UCqUuof2c-R3dTX6G6LBGB9A"><img alt="My Youtube channel" src="youtubeLogo.png" style="height:1em"> 유튜브 채널</a>
 	</div>
-	<script>
-		loadPosts('Posts');
-	</script>
 </body>
 
 </html>
