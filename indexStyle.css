@@ -21,6 +21,11 @@ nav {
     overflow: hidden;
 }
 
+nav > ul ul > li {
+    margin-left: -1.5em;
+    list-style-position: outside;
+}
+
 div#profile {
     width: calc(20% - 1.0em * 2);
     height: calc(20% - 1.0em * 2);
