@@ -5,9 +5,12 @@
 	<meta charset="utf-8">
 	<title>UMJC의 자유로운 공간</title>
 	<link rel="stylesheet" type="text/css" href="indexStyle.css">
-	<script src="indexLoadPosts.js"></script>
+	<script src="mainScripts.js"></script>
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css">
+	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
 </head>
 
 <body onload="loadPosts('Posts')">
@@ -18,7 +21,7 @@
 	<nav>
 		<ul>
 			<li>
-				카테고리<br>
+				<a href="#" onclick="loadPosts('Posts/')">카테고리</a><br>
 				<ul>
 					<li><a href="#" onclick="loadPosts('Posts/Educations')">학습</a></li>
 					<li><a href="#" onclick="loadPosts('Posts/Mathematics')">수학</a>
@@ -39,6 +42,12 @@
 				</ul>
 			</li>
 		</ul>
+		<!--Search bar-->
+		<label class="searchBar">
+			검색&nbsp;&nbsp;<input type="text" placeholder="검색할 내용..." size="auto" class="searchInput" onkeydown="if (event.keyCode == 13) {searchPosts('Posts/');}">
+		</label>
+		<button type="button" onclick="searchPosts('Posts/')" value="">검색</button>
+		
 	</nav>
 	<div id="profile">
 		<h3 style="text-align:center;">UMJC</h3>
