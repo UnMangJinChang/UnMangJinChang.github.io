@@ -56,6 +56,12 @@
                 vertical-align: middle;
                 font-weight: bolder;
             }
+            hr {
+                border-color: #b26b6b;
+                border-top: 2px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
         </style>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -73,6 +79,16 @@
             </nav>
             <div id="content_pane">
                 <!--여기에 콘텐츠 작성-->
+                <h2>최근 포스트</h2>
+                <hr>
+                <!--포스트 목록을 늘리려면 아래 div 태그를 복사할 것-->
+                <div class="post">
+                    <!--포스트 제목-->
+                    <div style="overflow-wrap:break-word;font-size:large;"><a href=""></a></div>
+                    <!--포스트 작성일자-->
+                    <div style="text-align:right; font-size:small; color: gray;"></div>
+                    <hr>
+                </div>
             </div>
         </div>
     </body>
