@@ -77,40 +77,25 @@ article#content_pane > header {
     font-weight: bolder;
 }
 
-article#content_pane > table.recent_post {
-    border-collapse: separate;
-    border-spacing: 0 2em;
-    border-color:transparent;
-    table-layout: fixed;
-    width: 100%;
+article#content_pane > section.post_list {
+    margin-top:1em;
+    padding-bottom:1em;
+    border-bottom: 2px solid #b26b6b;
 }
 
-article#content_pane > table.recent_post td {
-    vertical-align: text-top;
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-    height: 20em;
-    border-right: 2px solid #b26b6b;
+article#content_pane > section.post_list:last-child {
+    border-bottom: none;
 }
 
-article#content_pane > table.recent_post td:last-child {
-    border-right: none;
-}
-
-article#content_pane > table.recent_post td > header {
-    text-align: center;
-    font-size: large;
+article#content_pane > section.post_list > header {
+    font-size: larger;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    display: block;
 }
 
-article#content_pane > table.recent_post td > summary {
+article#content_pane > section.post_list > footer {
+    font-size:smaller;
     color: gray;
-    font-size: small;
-    text-align: start;
-    vertical-align: middle;
-    padding-left: 1em;
-    padding-right: 1em;
 }
         </style>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -130,297 +115,62 @@ article#content_pane > table.recent_post td > summary {
             <article id="content_pane">
 <header>🕜 최근 포스트</header>
 <hr>
-<table class="recent_post">
-    <tbody>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<!--여기에 최근 포스트 5개 표시-->
+<section class="post_list">
+    <header>
+        <a href="#"></a>
+    </header>
+    <footer>
+    </footer>
+</section>
 <hr>
 <br><br>
 <header>✏️ 수학</header>
 <hr>
-<table class="recent_post">
-    <tbody>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<!--여기에 수학 관련 최근 포스트 5개 표시-->
+<section class="post_list">
+    <header>
+        <a href="#"></a>
+    </header>
+    <footer>
+    </footer>
+</section>
 <hr>
 <br><br>
 <header>🏫 교육학</header>
 <hr>
-<table class="recent_post">
-    <tbody>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<!--여기에 교육학 관련 최근 포스트 5개 표시-->
+<section class="post_list">
+    <header>
+        <a href="#"></a>
+    </header>
+    <footer>
+    </footer>
+</section>
 <hr>
 <br><br>
 <header>🧮 수학교육학</header>
 <hr>
-<table class="recent_post">
-    <tbody>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<!--여기에 수학교육 관련 최근 포스트 5개 표시-->
+<section class="post_list">
+    <header>
+        <a href="#"></a>
+    </header>
+    <footer>
+    </footer>
+</section>
 <hr>
 <br><br>
 <header>👨‍💻 프로그래밍</header>
 <hr>
-<table class="recent_post">
-    <tbody>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-            <td>
-                <header>
-                    <a href=""></a>
-                </header>
-                <summary>
-                    
-                </summary>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<!--여기에 프로그래밍 관련 최근 포스트 5개 표시-->
+<section class="post_list">
+    <header>
+        <a href="#"></a>
+    </header>
+    <footer>
+    </footer>
+</section>
 <hr>
 <br><br>
             </article>
