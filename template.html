@@ -7,11 +7,15 @@
             * {
                 margin: 0%;
             }
+            a {
+                color: rgb(35, 89, 115);
+                text-decoration: none;
+            }
             body {
                 background-color: #F7F5EC;
             }
             body > div {
-                background-color: #EBE1DB;
+                background-color: white;
                 margin-right: 5em;
                 margin-left: 5em;
                 padding: 2.5em;
@@ -28,13 +32,15 @@
                 justify-content: center;
             }
             nav#main_nav {
-                background-color: #EBC8C8;
+                background-color: #EBE1DB;
                 width: 60%;
                 height: 2em;
-                border-radius: 1em;
+                border-radius: 0.5em;
+                margin-left: 10%;
+                margin-right: 10%;
                 margin-bottom: 1em;
-                padding-left: 20%;
-                padding-right: 20%;
+                padding-left: 10%;
+                padding-right: 10%;
                 overflow: hidden;
                 display: flex;
                 justify-content: space-between;
@@ -46,15 +52,15 @@
                 margin: 0%;
                 padding: 0;
             }
-            a {
-                color: rgb(35, 89, 115);
-                text-decoration: none;
-            }
             nav#main_nav > div > a {
                 color: rgb(35, 89, 115);
                 text-decoration: none;
                 vertical-align: middle;
                 font-weight: bolder;
+            }
+            div#content_pane {
+                padding-left: 10%;
+                padding-right: 10%;
             }
             hr {
                 border-color: #b26b6b;
@@ -62,6 +68,7 @@
                 margin-top: 4px;
                 margin-bottom: 4px;
             }
+            /*CONTENT STYLE*/
         </style>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -78,7 +85,7 @@
                 <div><a href="/Posts">포스트</a></div>
             </nav>
             <div id="content_pane">
-                <!--여기에 콘텐츠 작성-->
+                <!--CONTENT HTML-->
             </div>
         </div>
     </body>
