@@ -4,30 +4,34 @@ article#content_pane > header {
     font-weight: bolder;
 }
 
-article#content_pane > table {
+article#content_pane > section.major {
     border-collapse: separate;
     border-spacing: 0 2em;
     border-color:transparent;
     table-layout: fixed;
     width: 100%;
-}
-
-article#content_pane > table td {
-    text-align: center;
-    vertical-align: text-top;
-    line-height: 1.6em;
-    overflow-wrap: break-word;
+    border-bottom: 2px solid #b26b6b;
     text-overflow: ellipsis;
-    height: 20em;
-    border-right: 2px solid #b26b6b;
+    margin-bottom: 2vh;
+    padding-bottom: 2vh;
 }
 
-article#content_pane > table td:last-child {
-    border-right: none;
-}
-
-article#content_pane > table td > header {
+article#content_pane > section.major > div.title {
     font-size: large;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    border: 0;
+    line-height: 180%;
+}
+
+article#content_pane > section.major > div.minor {
+    border: 0;
+    line-height: 180%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+article#content_pane > section.major > div.minor > a {
+    display: inline-block;
 }

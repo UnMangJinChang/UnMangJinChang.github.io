@@ -23,7 +23,6 @@
                 width: 80vw;
                 padding-top: 2vh;
                 min-height: 100vh;
-                overflow: scroll;
             }
             header#main_banner {
                 width: 100%;
@@ -77,34 +76,37 @@ article#content_pane > header {
     font-weight: bolder;
 }
 
-article#content_pane > table {
+article#content_pane > section.major {
     border-collapse: separate;
     border-spacing: 0 2em;
     border-color:transparent;
     table-layout: fixed;
     width: 100%;
-}
-
-article#content_pane > table td {
-    text-align: center;
-    vertical-align: text-top;
-    line-height: 1.6em;
-    overflow-wrap: break-word;
+    border-bottom: 2px solid #b26b6b;
     text-overflow: ellipsis;
-    height: 20em;
-    border-right: 2px solid #b26b6b;
+    margin-bottom: 2vh;
+    padding-bottom: 2vh;
 }
 
-article#content_pane > table td:last-child {
-    border-right: none;
-}
-
-article#content_pane > table td > header {
+article#content_pane > section.major > div.title {
     font-size: large;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    border: 0;
+    line-height: 180%;
 }
 
+article#content_pane > section.major > div.minor {
+    border: 0;
+    line-height: 180%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+article#content_pane > section.major > div.minor > a {
+    display: inline-block;
+}
         </style>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -123,51 +125,58 @@ article#content_pane > table td > header {
             <article id="content_pane">
 <header>카테고리</header>
 <hr>
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <header>수학</header>
-                &nbsp;&nbsp;<a href="/Posts/NumberTheory">수론</a><br>
-                &nbsp;&nbsp;<a href="/Posts/Calculus">미적분학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/LinearAlgebra">선형대수학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/RealAnalysis">실해석학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/Statistics">통계학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/AbstractAlgebra">대수학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/DifferentialGeometry">미분기하학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/Topology">위상수학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/ComplexAnalysis">복소해석학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/Discrete">이산수학</a><br>
-            </td>
-            <td>
-                <header>교육학</header>
-                &nbsp;&nbsp;<a href="/Posts/EducationalPsychology">교육심리</a><br>
-                &nbsp;&nbsp;<a href="/Posts/EducationalTechnology">교육공학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/EducationalEvaluation">교육평가</a><br>
-                &nbsp;&nbsp;<a href="/Posts/EducationalSociety">교육사회</a><br>
-                &nbsp;&nbsp;<a href="/Posts/EducationalHistory">교육사</a><br>
-                &nbsp;&nbsp;<a href="/Posts/SpecialEducation101">특수교육학개론</a><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <header>수학교육학</header>
-                &nbsp;&nbsp;<a href="/Posts/MathematicsEducation">수학교육학</a><br>
-                &nbsp;&nbsp;<a href="/Posts/MathematicsTeaching">수학교과교재론</a><br>
-                &nbsp;&nbsp;<a href="/Posts/MathematicsAccessment">수학교육평가</a><br>
-                &nbsp;&nbsp;<a href="/Posts/MathematicsHistory">수학사</a><br>
-            </td>
-            <td>
-                <header>프로그래밍</header>
-                &nbsp;&nbsp;<a href="/Posts/SecondaryMathProgramming">중등 수학과 프로그래밍</a><br>
-                &nbsp;&nbsp;<a href="/Posts/TertiaryMathProgramming">고등 수학과 프로그래밍</a><br>
-                &nbsp;&nbsp;<a href="/Posts/OtherProgramming">기타 프로그래밍</a><br>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<hr>
-
+<section class="major">
+	<div class="title">
+		수학
+	</div>
+	<div class="minor">
+		<a href="/Posts/NumberTheory/">수론 </a>
+		<a href="/Posts/Calculus/">미적분학 </a>
+		<a href="/Posts/LinearAlgebra/">선형대수학 </a>
+		<a href="/Posts/RealAnalysis/">실해석학 </a>
+		<a href="/Posts/Statistics/">미적분학 </a>
+		<a href="/Posts/AbstractAlgebra/">선형대수학 </a>
+		<a href="/Posts/DifferentialGeometry/">실해석학 </a>
+		<a href="/Posts/Topology/">미적분학 </a>
+		<a href="/Posts/ComplexAnalysis/">선형대수학 </a>
+		<a href="/Posts/Discrete/">실해석학 </a>
+	</div>
+</section>
+<section class="major">
+	<div class="title">
+		교육학
+	</div>
+	<div class="minor">
+		<a href="/Posts/EducationHistory/">교육사 </a>
+		<a href="/Posts/EducationalTechnology/">교육공학 </a>
+		<a href="/Posts/EducationalEvaluation/">교육평가 </a>
+		<a href="/Posts/EducationalPsychology/">교육심리 </a>
+		<a href="/Posts/EducationalSociology/">교육사회 </a>
+		<a href="/Posts/EducationalAdministration/">교육행정 </a>
+		<a href="/Posts/SpecialEducation/">특수교육론 </a>
+	</div>
+</section>
+<section class="major">
+	<div class="title">
+		수학교육학
+	</div>
+	<div class="minor">
+		<a href="/Posts/MathematicalEducation/">수학교육학 </a>
+		<a href="/Posts/MathematicalEvaluation/">수학교육평가 </a>
+		<a href="/Posts/MathematicalTeaching/">수학교과교재론 </a>
+		<a href="/Posts/MathematicsHistory/">수학사 </a>
+	</div>
+</section>
+<section class="major">
+	<div class="title">
+		프로그래밍
+	</div>
+	<div class="minor">
+		<a href="/Posts/SecondaryMathProgramming/">중등 수학과 프로그래밍 </a>
+		<a href="/Posts/TertiaryMathProgramming/">고등 수학과 프로그래밍 </a>
+		<a href="/Posts/OtherProgramming/">기타 프로그래밍 </a>
+	</div>
+</section>
             </article>
         </div>
     </body>
