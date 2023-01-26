@@ -76,36 +76,25 @@ article#content_pane > header {
     font-weight: bolder;
 }
 
-article#content_pane > section.major {
-    border-collapse: separate;
-    border-spacing: 0 2em;
-    border-color:transparent;
-    table-layout: fixed;
-    width: 100%;
+article#content_pane > div > section.post_list {
+    margin-top:1em;
+    padding-bottom:1em;
     border-bottom: 2px solid #b26b6b;
-    text-overflow: ellipsis;
-    margin-bottom: 2vh;
-    padding-bottom: 2vh;
 }
 
-article#content_pane > section.major > div.title {
-    font-size: large;
+article#content_pane > div > section.post_list:last-child {
+    border-bottom: none;
+}
+
+article#content_pane > div > section.post_list > header {
+    font-size: larger;
     font-weight: bold;
-    border: 0;
-    line-height: 180%;
+    display: block;
 }
 
-article#content_pane > section.major > div.minor {
-    border: 0;
-    line-height: 180%;
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    gap: 1vh;
-}
-
-article#content_pane > section.major > div.minor > a {
-    display: inline-block;
+article#content_pane > div > section.post_list > footer {
+    font-size:smaller;
+    color: gray;
 }
         </style>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -123,59 +112,15 @@ article#content_pane > section.major > div.minor > a {
                 <div><a href="/Posts">포스트</a></div>
             </nav>
             <article id="content_pane">
-<header>카테고리</header>
+<header>교육사</header>
 <hr>
-<section class="major">
-	<div class="title">
-		수학
-	</div>
-	<div class="minor">
-		<a href="/Posts/NumberTheory/">수론 </a>
-		<a href="/Posts/Calculus/">미적분학 </a>
-		<a href="/Posts/LinearAlgebra/">선형대수학 </a>
-		<a href="/Posts/RealAnalysis/">실해석학 </a>
-		<a href="/Posts/Statistics/">통계학 </a>
-		<a href="/Posts/AbstractAlgebra/">대수학 </a>
-		<a href="/Posts/DifferentialGeometry/">미분기하학 </a>
-		<a href="/Posts/Topology/">위상수학 </a>
-		<a href="/Posts/ComplexAnalysis/">복소해석학 </a>
-		<a href="/Posts/Discrete/">이산수학 </a>
-	</div>
-</section>
-<section class="major">
-	<div class="title">
-		교육학
-	</div>
-	<div class="minor">
-		<a href="/Posts/EducationHistory/">교육사 </a>
-		<a href="/Posts/EducationalTechnology/">교육공학 </a>
-		<a href="/Posts/EducationalEvaluation/">교육평가 </a>
-		<a href="/Posts/EducationalPsychology/">교육심리 </a>
-		<a href="/Posts/EducationalSociology/">교육사회 </a>
-		<a href="/Posts/EducationalAdministration/">교육행정 </a>
-		<a href="/Posts/SpecialEducation/">특수교육론 </a>
-	</div>
-</section>
-<section class="major">
-	<div class="title">
-		수학교육학
-	</div>
-	<div class="minor">
-		<a href="/Posts/MathematicalEducation/">수학교육학 </a>
-		<a href="/Posts/MathematicalEvaluation/">수학교육평가 </a>
-		<a href="/Posts/MathematicalTeaching/">수학교과교재론 </a>
-		<a href="/Posts/MathematicsHistory/">수학사 </a>
-	</div>
-</section>
-<section class="major">
-	<div class="title">
-		프로그래밍
-	</div>
-	<div class="minor">
-		<a href="/Posts/SecondaryMathProgramming/">중등 수학과 프로그래밍 </a>
-		<a href="/Posts/TertiaryMathProgramming/">고등 수학과 프로그래밍 </a>
-		<a href="/Posts/OtherProgramming/">기타 프로그래밍 </a>
-	</div>
+<!--포스트 작성 시 아래의 section 태그를 추가하여 제목을 header에, 작성일자를 footer에 작성-->
+<section class="post_list">
+    <header>
+        <a href="#"></a>
+    </header>
+    <footer>
+    </footer>
 </section>
             </article>
         </div>
