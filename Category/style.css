@@ -1,0 +1,33 @@
+article#content_pane > header {
+    color: #b26b6b;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+article#content_pane > table {
+    border-collapse: separate;
+    border-spacing: 0 2em;
+    border-color:transparent;
+    table-layout: fixed;
+    width: 100%;
+}
+
+article#content_pane > table td {
+    text-align: center;
+    vertical-align: text-top;
+    line-height: 1.6em;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    height: 20em;
+    border-right: 2px solid #b26b6b;
+}
+
+article#content_pane > table td:last-child {
+    border-right: none;
+}
+
+article#content_pane > table td > header {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}

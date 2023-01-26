@@ -1,3 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mathematics and Programming</title>
+        <style>
+            * {
+                margin: 0%;
+            }
+            a {
+                color: rgb(35, 89, 115);
+                text-decoration: none;
+            }
+            body {
+                background-color: #F7F5EC;
+            }
+            body > div {
+                background-color: white;
+                margin-right: 5em;
+                margin-left: 5em;
+                padding: 2.5em;
+                padding-top: 1em;
+                min-height: 100vh;
+            }
+            header#main_banner {
+                width: 100%;
+                height: 10em;
+                margin-bottom: 1em;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            nav#main_nav {
+                background-color: #EBE1DB;
+                width: 60%;
+                height: 2em;
+                border-radius: 0.5em;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 1em;
+                padding-left: 10%;
+                padding-right: 10%;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+            }
+            nav#main_nav > div {
+                height: 2.5em;
+                display:inline-block;
+                text-align: center;
+                margin: 0%;
+                padding: 0;
+            }
+            nav#main_nav > div > a {
+                color: rgb(35, 89, 115);
+                text-decoration: none;
+                vertical-align: middle;
+                font-weight: bolder;
+            }
+            article#content_pane {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            hr {
+                border-color: #b26b6b;
+                border-top: 2px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+article#content_pane > header {
+    color: #b26b6b;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+article#content_pane > table.recent_post {
+    border-collapse: separate;
+    border-spacing: 0 2em;
+    border-color:transparent;
+    table-layout: fixed;
+    width: 100%;
+}
+
+article#content_pane > table.recent_post td {
+    vertical-align: text-top;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    height: 20em;
+    border-right: 2px solid #b26b6b;
+}
+
+article#content_pane > table.recent_post td:last-child {
+    border-right: none;
+}
+
+article#content_pane > table.recent_post td > header {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+article#content_pane > table.recent_post td > summary {
+    color: gray;
+    font-size: small;
+    text-align: start;
+    vertical-align: middle;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <div>
+            <header id="main_banner">
+                <div style="font-family: serif; font-size: xx-large; position: relative; margin: auto;">Mathematics and Programming</div>
+            </header>
+            <nav id="main_nav">
+                <div><a href="/Introduction">소개</a></div>
+                <div><a href="/">메인</a></div>
+                <div><a href="/Category">카테고리</a></div>
+                <div><a href="/Posts">포스트</a></div>
+            </nav>
+            <article id="content_pane">
 <header>🕜 최근 포스트</header>
 <hr>
 <table class="recent_post">
@@ -293,3 +420,7 @@
 </table>
 <hr>
 <br><br>
+            </article>
+        </div>
+    </body>
+</html>

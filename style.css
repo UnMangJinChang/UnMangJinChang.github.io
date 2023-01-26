@@ -1,0 +1,41 @@
+article#content_pane > header {
+    color: #b26b6b;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+article#content_pane > table.recent_post {
+    border-collapse: separate;
+    border-spacing: 0 2em;
+    border-color:transparent;
+    table-layout: fixed;
+    width: 100%;
+}
+
+article#content_pane > table.recent_post td {
+    vertical-align: text-top;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    height: 20em;
+    border-right: 2px solid #b26b6b;
+}
+
+article#content_pane > table.recent_post td:last-child {
+    border-right: none;
+}
+
+article#content_pane > table.recent_post td > header {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+article#content_pane > table.recent_post td > summary {
+    color: gray;
+    font-size: small;
+    text-align: start;
+    vertical-align: middle;
+    padding-left: 1em;
+    padding-right: 1em;
+}

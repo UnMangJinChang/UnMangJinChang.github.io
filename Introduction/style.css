@@ -1,0 +1,10 @@
+article#content_pane > header {
+    color: #b26b6b;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+article#content_pane p {
+    text-indent: 1em;
+    line-height: 180%;
+}
