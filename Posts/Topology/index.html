@@ -36,7 +36,6 @@
             nav#main_nav {
                 background-color: #EBE1DB;
                 width: 60%;
-                min-height: 2.5em;
                 border-radius: 0.5em;
                 margin-left: 10%;
                 margin-right: 10%;
@@ -45,20 +44,21 @@
                 padding-right: 10%;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: space-around;
             }
             nav#main_nav > div {
-                height: 5vh;
+                min-height: 5vh;
                 display:inline-block;
-                text-align: center;
                 margin: 0%;
                 padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
             nav#main_nav > div > a {
                 color: rgb(35, 89, 115);
-                text-decoration: none;
-                vertical-align: middle;
                 font-weight: bolder;
+                text-align: center;
             }
             article#content_pane {
                 padding-left: 10%;
