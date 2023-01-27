@@ -1,5 +1,17 @@
+<script>
+    document.title = '포스트 제목';
+    window.onload = function() {
+        let timestamp = document.getElementsByClassName('timestamp');
+        for (let i = 0; i < timestamp.length; i++) {
+            let element = timestamp.item(i);
+            element.innerHTML = '최근 수정된 시각: ' + (new Date(document.lastModified).toLocaleString());
+        }
+    }
+</script>
+
 <header class="title">[수론] 중등교사임용시험 2018학년도 수학A 18번 문제</header>
 <hr>
+<aside class="timestamp"></aside>
 <section>
     <p>
         시험삼아 처음 이 곳에 적어볼 글은 이 문제에 관한 내용입니다.

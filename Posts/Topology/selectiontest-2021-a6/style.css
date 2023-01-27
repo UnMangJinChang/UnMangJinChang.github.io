@@ -8,6 +8,12 @@ article#content_pane > header.title {
     color: #b26b6b;
 }
 
+article#content_pane > aside.timestamp {
+    text-align: end;
+    font-size: small;
+    color: gray;
+}
+
 article#content_pane p {
     text-indent: 1em;
     margin-bottom: 1vh;
