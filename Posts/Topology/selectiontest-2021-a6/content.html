@@ -1,7 +1,7 @@
 <script>
-    let titleTag = document.getElementsByClassName('title').item(0);
-    document.title = titleTag.innerText;
     window.onload = function() {
+        let titleTag = document.getElementsByClassName('title').item(0);
+        document.title = titleTag.innerText;
         let timestamp = document.getElementsByClassName('timestamp');
         for (let i = 0; i < timestamp.length; i++) {
             let element = timestamp.item(i);
