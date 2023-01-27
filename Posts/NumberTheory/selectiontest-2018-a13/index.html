@@ -137,8 +137,9 @@ article#content_pane div.theorem_box > div.content {
             </nav>
             <article id="content_pane">
 <script>
-    document.title = '포스트 제목';
     window.onload = function() {
+        let titleTag = document.getElementsByClassName('title').item(0);
+        document.title = titleTag.innerText;
         let timestamp = document.getElementsByClassName('timestamp');
         for (let i = 0; i < timestamp.length; i++) {
             let element = timestamp.item(i);
