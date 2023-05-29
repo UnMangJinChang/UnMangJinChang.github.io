@@ -76,23 +76,23 @@ article#content_pane > header {
     font-weight: bolder;
 }
 
-article#content_pane > section.post_list {
+article#content_pane > div > section.post_list {
     margin-top:1em;
     padding-bottom:1em;
     border-bottom: 2px solid #b26b6b;
 }
 
-article#content_pane > section.post_list:last-child {
+article#content_pane > div > section.post_list:last-child {
     border-bottom: none;
 }
 
-article#content_pane > section.post_list > header {
+article#content_pane > div > section.post_list > header {
     font-size: larger;
     font-weight: bold;
     display: block;
 }
 
-article#content_pane > section.post_list > footer {
+article#content_pane > div > section.post_list > footer {
     font-size:smaller;
     color: gray;
 }
@@ -115,98 +115,9 @@ article#content_pane > section.post_list > footer {
                 <div><a href="/Posts">포스트</a></div>
             </nav>
             <article id="content_pane">
-<header>🕜 최근 포스트</header>
+<header>기타 이야기</header>
 <hr>
-<div>
-<!--여기에 최근 포스트 5개 표시-->
-<section class="post_list">
-    <header>
-        <a href="/Posts/Topology/selectiontest-2021-a6/">[위상수학] 중등교사임용시험 2021학년도 수학A 6번 문제</a>
-    </header>
-    <footer>
-        2023/01/27
-    </footer>
-</section>
-<section class="post_list">
-    <header>
-        <a href="/Posts/NumberTheory/selectiontest-2018-a13/">[수론] 중등교사임용시험 2018학년도 수학A 18번 문제</a>
-    </header>
-    <footer>
-        2023/01/27
-    </footer>
-</section>
-</div>
-<hr>
-<br><br>
-<header>✏️ 수학</header>
-<hr>
-<div>
-<!--여기에 수학 관련 최근 포스트 5개 표시-->
-<section class="post_list">
-    <header>
-        <a href="/Posts/Topology/selectiontest-2021-a6/">[위상수학] 중등교사임용시험 2021학년도 수학A 6번 문제</a>
-    </header>
-    <footer>
-        2023/01/27
-    </footer>
-</section>
-<section class="post_list">
-    <header>
-        <a href="/Posts/NumberTheory/selectiontest-2018-a13/">[수론] 중등교사임용시험 2018학년도 수학A 18번 문제</a>
-    </header>
-    <footer>
-        2023/01/27
-    </footer>
-</section>
-</div>
-<hr>
-<br><br>
-<header>🏫 교육학</header>
-<hr>
-<div>
-<!--여기에 교육학 관련 최근 포스트 5개 표시-->
-<section class="post_list">
-    <header>
-        <a href="#"></a>
-    </header>
-    <footer>
-    </footer>
-</section>
-</div>
-<hr>
-<br><br>
-<header>🧮 수학교육학</header>
-<hr>
-<div>
-<!--여기에 수학교육 관련 최근 포스트 5개 표시-->
-<section class="post_list">
-    <header>
-        <a href="#"></a>
-    </header>
-    <footer>
-    </footer>
-</section>
-</div>
-<hr>
-<br><br>
-<header>👨‍💻 프로그래밍</header>
-<hr>
-<div>
-<!--여기에 프로그래밍 관련 최근 포스트 5개 표시-->
-<section class="post_list">
-    <header>
-        <a href="#"></a>
-    </header>
-    <footer>
-    </footer>
-</section>
-</div>
-<hr>
-<br><br>
-<header>🍵️ 기타</header>
-<hr>
-<div>
-<!--여기에 기타 최근 포스트 5개 표시-->
+<!--포스트 작성 시 아래의 section 태그를 추가하여 제목을 header에, 작성일자를 footer에 작성-->
 <section class="post_list">
     <header>
         <a href="/Posts/EtCetera/to-2023-practice-school/">2023년 교육현장실습 2학년 6반 학생들에게. </a>
@@ -215,9 +126,6 @@ article#content_pane > section.post_list > footer {
         2023/05/29
     </footer>
 </section>
-</div>
-<hr>
-<br><br>
             </article>
         </div>
     </body>

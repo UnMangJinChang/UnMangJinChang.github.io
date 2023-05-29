@@ -1,0 +1,46 @@
+article#content_pane > section {
+    font-family: serif;
+}
+
+article#content_pane > header.title {
+    font-weight: bolder;
+    font-size: x-large;
+    color: #b26b6b;
+}
+
+article#content_pane > aside.timestamp {
+    text-align: end;
+    font-size: small;
+    color: gray;
+}
+
+article#content_pane p {
+    text-indent: 1em;
+    margin-bottom: 1vh;
+}
+
+article#content_pane div.theorem_box {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 2px solid #b26b6b;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    height:fit-content;
+}
+
+article#content_pane div.theorem_box > div.label {
+    background-color: white;
+    border-left: 1vh solid white;
+    border-right: 1vh solid white;
+    vertical-align: middle;
+    position: absolute;
+    top: calc(-0.5em - 2px);
+    left: 20px;
+}
+
+article#content_pane div.theorem_box > div.content {
+    text-indent: 1em;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
