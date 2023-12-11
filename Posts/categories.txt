@@ -1,4 +1,4 @@
-math 수학
-programming 프로그래밍
-mathematical-education 수학_교육
-et-cetera 기타_포스트
+math ✏️_수학
+programming 💻_프로그래밍
+mathematical-education 🧮_수학_교육
+et-cetera 💭_기타_포스트
