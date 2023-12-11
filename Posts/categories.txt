@@ -1,0 +1,4 @@
+math 수학
+programming 프로그래밍
+mathematical-education 수학_교육
+et-cetera 기타_포스트
