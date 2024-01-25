@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mathematics and Programming</title>
+        <style>
+            * {
+                margin: 0%;
+            }
+            a {
+                color: rgb(35, 89, 115);
+                text-decoration: none;
+            }
+            body {
+                background-color: #F7F5EC;
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+            body > div {
+                background-color: white;
+                padding: 5vw;
+                width: 80vw;
+                padding-top: 2vh;
+                min-height: 100vh;
+            }
+            header#main_banner {
+                width: 100%;
+                height: 10em;
+                margin-bottom: 2vh;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            nav#main_nav {
+                background-color: #EBE1DB;
+                width: 60%;
+                border-radius: 0.5em;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 2vh;
+                padding-left: 10%;
+                padding-right: 10%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            nav#main_nav > div {
+                min-height: 5vh;
+                display:inline-block;
+                margin: 0%;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            nav#main_nav > div > a {
+                color: rgb(35, 89, 115);
+                font-weight: bolder;
+                text-align: center;
+            }
+            article#content_pane {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            hr {
+                border-color: #b26b6b;
+                border-top: 2px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+article#content_pane > section {
+    font-family: serif;
+}
+
+article#content_pane > header.title {
+    font-weight: bolder;
+    font-size: x-large;
+    color: #b26b6b;
+}
+
+article#content_pane > aside.timestamp {
+    text-align: end;
+    font-size: small;
+    color: gray;
+}
+
+article#content_pane p {
+    text-indent: 1em;
+    margin-bottom: 1vh;
+}
+
+article#content_pane img {
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 400px;
+}
+
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div>
+            <header id="main_banner">
+                <div style="font-family: serif; font-size: xx-large; position: relative; margin: auto;">Mathematics and Programming</div>
+            </header>
+            <nav id="main_nav">
+                <div><a href="/Introduction">소개</a></div>
+                <div><a href="/">메인</a></div>
+                <div><a href="/Category">카테고리</a></div>
+                <div><a href="/Posts">포스트</a></div>
+            </nav>
+            <article id="content_pane">
+<!--TITLE
+헤론의 법칙: 제곱근의 값 어림하기
+-->
+<script>
+    window.onload = function () {
+        let titleTag = document.getElementsByClassName('title').item(0);
+        document.title = titleTag.innerText;
+        let timestamp = document.getElementsByClassName('timestamp');
+        for (let i = 0; i < timestamp.length; i++) {
+            let element = timestamp.item(i);
+            element.innerHTML = '최근 수정된 시각: ' + (new Date(document.lastModified).toLocaleString());
+        }
+    }
+</script>
+
+<header class="title">헤론의 법칙: 제곱근의 값 어림하기</header>
+<hr>
+<aside class="timestamp"></aside>
+<section>
+    <p>
+        제곱근의 값을 구하는 방법에는 여러가지 방법이 있습니다. 
+        여기서는 헤론의 법칙을 고등학교 1학년 공통 수학 수준에서 유도하는 방법에 대해서 서술해보겠습니다. 
+    </p>
+    <p>
+        양수 \(a\)에 대해 제곱근 \(\sqrt{a}\)는 이차방정식 \(x^2 - a = 0\)의 해입니다. 
+        \(f(x)=x^2 - a\)라고 하겠습니다. 
+        그리고 \(\sqrt{a}\)보다 큰 어떤 수를 \(u\)라고 해보겠습니다. 
+        이제 다음 그림과 같이 \(u\)를 지나고 \(y=f(x)\)의 그래프에 접하는 직선을 찾으려고 합니다.<br>
+        <img src="media/graph-1.jpg" alt="포물선에 접하는 직선">
+        먼저 \(f(u)=u^2 - a\)이기 때문에 직선은 \((u,\,u^2-a)\)를 지나야만 합니다. 
+    </p>
+    <p>
+        이제 직선의 기울기를 찾으면 직선이 결정됩니다. 
+        만약 미적분학을 배운 학생이라면 기울기가 \(2u\)임을 바로 유추할 수 있겠지만, 여기서는 포물선과 직선의 관계를 사용해 유도하겠습니다. 
+        기울기를 \(k\)라고 하면 직선의 방정식은 \(y=k(x-u)+u^2-a\)입니다. 
+        만일 포물선과 직선이 접한다면 방정식 \(f(x) = x^2 - a = k(x - u) + u^2 - a\)의 해는 하나만 존재해야 합니다. 
+        이 방정식을 정리하면 \(x^2 - kx + u^2 - uk = 0\)이 되는데, 이의 이차방정식 판별식을 \(D\)라고 하면 
+        \[D=k^2 - 4(u^2-uk) = k^2 - 4uk + 4u^2 = (k - 2u)^2\]
+        입니다. 
+        중근을 가질 경우 \(D\)가 \(0\)이므로 \((k - 2u)^2 = 0\)이고, 따라서 \(k = 2u\)입니다. 
+        이제 직선의 방정식은 \(y = 2u(x - u) + u^2 - a\)로 결정되었습니다. 
+    </p>
+    <p>
+        마지막으로 이 직선의 \(x\)절편 \(v\)를 구해보겠습니다. 
+        \(2u (v - u) + u^2 - a = 2uv - u^2 - a = 0\)을 만족해야 하므로 
+        \[v = \frac{1}{2u}(u^2 + a) = \frac{1}{2}\left(u + \frac{a}{u}\right)\]
+        를 얻습니다. 
+    </p>
+    <p>
+        위 그림에서 보이듯이, \(u\)가 \(\sqrt{a}\)보다 크면 \(v\)는 여전히 \(\sqrt{a}\)보다 크지만 \(u\)보다 \(\sqrt{a}\)에 가까움을 알 수 있습니다. 
+        따라서 \(v\)를 \(u\)로 하여 과정을 반복하면 값을 끊임없이 개선할 수 있고, 따라서 제곱근의 근삿값을 구할 수 있습니다. 
+        즉, 이 과정을 반복할수록 구하려는 값에 더 가까워집니다. 
+    </p>
+    <p>
+        예시로 \(\sqrt{13}\)의 값을 구해보겠습니다. 
+        \(13 < 16 = 4^2\)이므로 초기 \(u\)를 \(4\)로 잡겠습니다. 
+        이때, 다음 Python 코드를 실행해 보면 다음과 같은 결과를 얻을 수 있습니다:
+<pre><code class="python">
+from fractions import Fraction 
+u = Fraction(4)
+for i in range(5):
+    u = (u + 13 / u) / 2
+    print(f'[{i + 1}]: {u.numerator}/{u.denominator}')
+    print(f'     {float(u)}')
+</code></pre>
+<pre><code class="asciidoc">
+[1]: 29/8
+    3.625
+[2]: 1673/464
+    3.605603448275862
+[3]: 5597777/1552544
+    3.605551275841458
+[4]: 62670214676897/17381590189376
+    3.605551275463989
+[5]: 7855111615296712300168050497/2178615977188081401764092544
+    3.605551275463989
+</code></pre>
+    이와 같이 \(\sqrt{13}\)의 값이 약 \(3.605551275463989\)이라고 계산할 수 있으며, 실제로 계산기로 이를 제곱해 보면 \(13\)에 매우 가까운 값을 얻음을 볼 수 있습니다. 
+    </p>
+</section>
+            </article>
+        </div>
+    </body>
+</html>

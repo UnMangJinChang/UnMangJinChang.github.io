@@ -1,0 +1,27 @@
+article#content_pane > section {
+    font-family: serif;
+}
+
+article#content_pane > header.title {
+    font-weight: bolder;
+    font-size: x-large;
+    color: #b26b6b;
+}
+
+article#content_pane > aside.timestamp {
+    text-align: end;
+    font-size: small;
+    color: gray;
+}
+
+article#content_pane p {
+    text-indent: 1em;
+    margin-bottom: 1vh;
+}
+
+article#content_pane img {
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 400px;
+}
